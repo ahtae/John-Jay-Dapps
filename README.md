@@ -2,12 +2,12 @@
 
 John Jay Dapp 1 is a Tkinter application. It allows an educational institution to select the semester and year of the graduating class and the directory containing the transcripts of the graduating class. From providing this information, a Merkle Tree can be constructed and a Merkle Root will appear in the associated field.
 
-<img src="./screenshots/Dapp1.png" width="1000" height="500" alt="Dapp1" />
+<img src="./screenshots/Dapp1.png" width="1000" height="400" alt="Dapp1" />
 
 John Jay Dapp 2 is a Tkinter application. It allows John Jay students to select the semester and year they graduated in and enter their transcript hash. If their hash transcript is in the Merkle Tree, they can send their prospective employer their Merkle proof, which they can in turn use in John Jay Dapp 3.
 
-<img src="./screenshots/Dapp2_success.png" width="1000" height="500" alt="Dapp2 success" />
-<img src="./screenshots/Dapp2_failure.png" width="1000" height="500" alt="Dapp2 failure" />
+<img src="./screenshots/Dapp2_success.png" width="1000" height="400" alt="Dapp2 success" />
+<img src="./screenshots/Dapp2_failure.png" width="1000" height="400" alt="Dapp2 failure" />
 
 John Jay Dapp 3 is a Flask application. It allows employers to verify that the John Jay alumni applying for the job at the company has completed their degree at John Jay College at the semester and year specified on their resume. It compares the student’s Merkle proof to the Merkle root retrieved through the contract and verifies that the proof is in fact a proof.
 
