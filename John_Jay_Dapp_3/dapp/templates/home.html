@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" type="text/css">
+{% endblock %}
+<div id="home-container" class="jumbotron text-center">
+  <h1 id="home-title">John Jay Dapp 3</h1>
+  <img id="home-logo" alt="John Jay College Mascot: Bloodhound"
+    src="{{url_for('static', filename='assets/bloodhound_mascot.png')}}">
+</div>
+{% endblock %}

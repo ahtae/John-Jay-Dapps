@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}" type="text/css">
+{% endblock %}
+<div class="jumbotron text-center">
+  <h1 class="error-title">Forbidden!</h1>
+  <p>Access to this resource on the server is denied!</p>
+</div>
+{% endblock %}

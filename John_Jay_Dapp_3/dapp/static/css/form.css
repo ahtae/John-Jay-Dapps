@@ -1,0 +1,60 @@
+#form-container {
+  margin-top: 40px;
+  background-color: #e9ecef;
+  margin-right: 8%;
+  margin-left: 8%;
+  overflow: hidden;
+}
+
+input,
+select {
+  padding: 10px 13px;
+  margin-bottom: 15px;
+  width: -webkit-fill-available;
+  border-radius: 2px;
+  border: 1px solid #d4d9e3;
+  color: #4d5060;
+  transition: all 0.3s ease-out;
+  font-size: 0.9em;
+}
+
+select {
+  -webkit-appearance: none;
+}
+
+input[type='text']::placeholder {
+  color: #d4d9e3;
+}
+
+input[type='text']:hover,
+input[type='file']:hover,
+select:hover {
+  border-color: #5f788a;
+  background: #d9f6ff;
+}
+
+input[type='file'] {
+  background-color: white;
+}
+
+input[type='text']:focus,
+input[type='file']:focus {
+  border-color: #5f788a;
+  box-shadow: unset;
+}
+
+input[type='submit'] {
+  background-color: #5f788a;
+  color: white;
+  border-radius: 2px;
+  margin-top: 15px;
+  font-weight: 400;
+  border: 1px solid #5f788a;
+  transition: all 0.3s ease-out;
+}
+
+input[type='submit']:hover {
+  background-color: white;
+  color: #5f788a;
+  cursor: pointer;
+}

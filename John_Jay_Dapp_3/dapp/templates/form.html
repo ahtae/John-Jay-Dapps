@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}" type="text/css">
+{% endblock %}
+<div id="form-container" class="jumbotron">
+  <h1>Form</h1>
+  <form method="POST" action="" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    <div class="form-group">
+      {{form.file.label}}
+      {{form.file}}
+      {{form.hash.label}}
+      {{form.hash}}
+      <div class="form-field">{{ form.semester.label }} {{ form.semester }}
+        <i class="fas fa-caret-down"></i>
+        {% if form.semester.errors %}
+        <ul class="errors">
+          {% for error in form.semester.errors %}
+          <li>{{ semester }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      <div class="form-field">{{ form.year.label }} {{ form.year }}
+        <i class="fas fa-caret-down"></i>
+        {% if form.year.errors %}
+        <ul class="errors">
+          {% for error in form.year.errors %}
+          <li>{{ year }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </div>
+    {{form.submit}}
+  </form>
+</div>
+{% endblock %}

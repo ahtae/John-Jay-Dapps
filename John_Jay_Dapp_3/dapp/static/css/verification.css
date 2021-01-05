@@ -1,0 +1,40 @@
+#verification-container {
+  margin-top: 30px;
+  color: #5f788a;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-top: 30px;
+}
+
+#information-container {
+  color: #5f788a;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.success-text {
+  color: green;
+}
+
+.error-text {
+  color: red;
+}
+
+#img {
+  height: 100px;
+  width: 150px;
+  text-align: center;
+}

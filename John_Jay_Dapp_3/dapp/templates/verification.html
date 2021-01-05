@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/verification.css') }}" type="text/css">
+{% endblock %}
+<div id="verification-container" class="jumbotron">
+  <img id="img" alt="John Jay College" src="{{url_for('static', filename='assets/jjay_logo.png')}}">
+  <div id="information-container">
+    <h4 class="title">Here is the information you provided:</h4>
+    <ul>
+      <li><span class="bold-text">Semester</span>: {{session['semester']}}</li>
+      <li><span class="bold-text">Year</span>: {{session['year']}}</li>
+      <li><span class="bold-text">Hash</span>: {{session['hash']}}</li>
+    </ul>
+    <h4 class="title">Result:</h4>
+    {% if session['is_valid'] %}
+    <h6 class="success-text">The prospective employee has completed their degree at John Jay College with the specified
+      graduating class.</h6>
+    {% else %}
+    <h6 class="error-text">The prospective employee has not completed their degree at John Jay College with the
+      specified graduating class.</h6>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
